@@ -1,0 +1,46 @@
+@import '../styles/colors.scss';
+
+$bar-height: 40px;
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: $bar-height;
+  padding: 10px 0 0 20px;
+
+  button {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+
+    color: $silver;
+    text-align: center;
+    padding: 2px 0;
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    &:hover, &:active {
+      color: $true-white;
+      transition: color .5s;
+    }
+  }
+}
+
+.topbar {
+  background: $dark-gray; /* default color */
+  background:
+      -moz-linear-gradient(135deg, transparent $bar-height, $dark-gray $bar-height);
+  background:
+      -o-linear-gradient(135deg, transparent $bar-height, $dark-gray $bar-height);
+  background:
+      -webkit-linear-gradient(135deg, transparent $bar-height, $dark-gray $bar-height);
+}
+
+.additionalInformation {
+  position: absolute;
+  top: 5px;
+  left: 60%;
+}

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?w8c7fb');
+  src:  url('fonts/icomoon.eot?w8c7fb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?w8c7fb') format('truetype'),
+    url('fonts/icomoon.woff?w8c7fb') format('woff'),
+    url('fonts/icomoon.svg?w8c7fb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-machine .path1:before {
+  content: "\e90b";
+  color: rgb(0, 0, 0);
+}
+.icon-machine .path2:before {
+  content: "\e90c";
+  margin-left: -1.2890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-machine .path3:before {
+  content: "\e90d";
+  margin-left: -1.2890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-machine .path4:before {
+  content: "\e90e";
+  margin-left: -1.2890625em;
+  color: rgb(35, 31, 32);
+}
+.icon-machine-add .path1:before {
+  content: "\e901";
+  color: rgb(0, 0, 0);
+}
+.icon-machine-add .path2:before {
+  content: "\e904";
+  margin-left: -1.2890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-machine-add .path3:before {
+  content: "\e905";
+  margin-left: -1.2890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-machine-add .path4:before {
+  content: "\e906";
+  margin-left: -1.2890625em;
+  color: rgb(35, 31, 32);
+}
+.icon-machine-add .path5:before {
+  content: "\e907";
+  margin-left: -1.2890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-machine-remove .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+.icon-machine-remove .path2:before {
+  content: "\e902";
+  margin-left: -1.2890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-machine-remove .path3:before {
+  content: "\e908";
+  margin-left: -1.2890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-machine-remove .path4:before {
+  content: "\e909";
+  margin-left: -1.2890625em;
+  color: rgb(35, 31, 32);
+}
+.icon-machine-remove .path5:before {
+  content: "\e90a";
+  margin-left: -1.2890625em;
+  color: rgb(35, 31, 32);
+}
+.icon-cog:before {
+  content: "\e903";
+}
+
