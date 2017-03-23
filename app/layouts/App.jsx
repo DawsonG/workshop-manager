@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 
 import Topbar from '../Topbar/Topbar';
 import ModalOverlay from '../Modals/ModalOverlay';
+import { openModal } from '../Modals/actions';
 
 import styles from './app.scss';
 
-const App = ({ children, isModalOpen, modal }) => (
+
+const App = ({ children, isModalOpen, modal, openMachineAdd, openSettings }) => (
   <div className={styles.container}>
-    <Topbar openMachineAdd={() => {}} openSettings={() => {}} />
+    <Topbar openMachineAdd={openMachineAdd} openSettings={openSettings} />
     {children}
 
     {isModalOpen &&
@@ -20,7 +22,9 @@ const App = ({ children, isModalOpen, modal }) => (
 App.propTypes = {
   children: React.PropTypes.node.isRequired,
   isModalOpen: React.PropTypes.bool,
-  modal: React.PropTypes.string
+  modal: React.PropTypes.string,
+  openMachineAdd: React.PropTypes.func.isRequired,
+  openSettings: React.PropTypes.func.isRequired
 };
 
 App.defaultProps = {
@@ -33,4 +37,13 @@ const mapStateToProps = (state) => ({
   modal: state.app.modal
 });
 
-export default connect(mapStateToProps)(App);
+const mapDispatchToProps = (dispatch) => ({
+  openMachineAdd: () => {
+    dispatch(openModal('machineAdd'));
+  },
+  openSettings: () => {
+    dispatch(openModal('settings'));
+  }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

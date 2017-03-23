@@ -5,6 +5,7 @@ import { routerMiddleware, push } from 'react-router-redux';
 import createLogger from 'redux-logger';
 
 import rootReducer from '../reducers';
+import rootSaga from '../sagas';
 import machineSagas from '../../Machines/sagas';
 
 const actionCreators = {
@@ -35,7 +36,7 @@ const enhancer = composeEnhancers(
 
 export default function configureStore(initialState) {
   const store = createStore(rootReducer, initialState, enhancer);
-  sagaMiddleware.run(machineSagas);
+  sagaMiddleware.run(rootSaga);
 
   if (module.hot) {
     module.hot.accept('../reducers', () =>

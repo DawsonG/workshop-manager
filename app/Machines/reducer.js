@@ -1,4 +1,4 @@
-import { update } from 'immutability-helper';
+import update from 'immutability-helper';
 import * as constants from './constants';
 import { ERROR } from '../redux/constants/constants';
 
@@ -27,6 +27,7 @@ export default (state = initialState, action) => {
     case constants.MACHINE_REMOVE_FAILURE:
     case constants.MACHINE_FETCH_FAILURE:
       console.log(`An error occurred during ${action.type}`, action.error);
+
       return update(state, {
         $set: {
           message: {
